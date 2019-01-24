@@ -1,0 +1,16 @@
+route:
+    receiver: 'slack'
+
+receivers:
+- name: 'slack'
+  email_configs:
+  - to: abc@abc.com
+    from: monitor@abc.com
+    smarthost: smtp.office365.com:587
+    auth_username: monitor@abc.com
+    auth_identity: monitor@abc.com
+    auth_password: 123456
+
+1. replace this one to config.yml
+2.  docker restart alertmanager
+
